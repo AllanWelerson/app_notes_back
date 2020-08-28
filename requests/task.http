@@ -1,0 +1,35 @@
+
+POST http://localhost:3333/workspace/1/tasks HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU5ODU4ODY2N30.8raichj4DDEn4aALky1mFF9Y0SQ7G8IQPMJRyYnBc0o
+
+{
+ "name": "Second Task",
+ "description": "This is the second task"
+}
+
+###
+PUT http://localhost:3333/workspace/1/tasks/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU5ODU4ODY2N30.8raichj4DDEn4aALky1mFF9Y0SQ7G8IQPMJRyYnBc0o
+
+{
+ "name": "First Task Updated",
+ "description": "This is the first task Updated"
+}
+
+###
+GET http://localhost:3333/workspace/1/tasks HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU5ODU4ODY2N30.8raichj4DDEn4aALky1mFF9Y0SQ7G8IQPMJRyYnBc0o
+
+
+###
+GET http://localhost:3333/workspace/1/tasks/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU5ODU4ODY2N30.8raichj4DDEn4aALky1mFF9Y0SQ7G8IQPMJRyYnBc0o
+
+###
+DELETE http://localhost:3333/workspace/1/tasks/1 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU5ODU4ODY2N30.8raichj4DDEn4aALky1mFF9Y0SQ7G8IQPMJRyYnBc0o
